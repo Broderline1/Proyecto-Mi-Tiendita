@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Proyecto_Mi_tiendita.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi tiendita</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <style>
+            #usuarioCaja{
+                border-radius: 12px;
+                background-color:#4A0707;
+                border:none;
+            }
+
+            #logoNavBar{
+                width: 80px;
+            }
+
+            #lbUsuario{
+                color:darkorchid ;
+            }
+
+            .rounded-button {
+                background-color: #861616; 
+                color: white; 
+                padding: 10px 20px; 
+                text-align: center; 
+                text-decoration: none; 
+                display: inline-block; 
+                font-size: 16px; 
+                border: none; 
+                border-radius: 12px; 
+                cursor: pointer; 
+                transition: background-color 0.3s ease; 
+            }
+
+            .rounded-button:hover {
+                background-color: black; /* Color de fondo al pasar el ratón */
+            }
+
+            .config{
+                width:80px;
+                height:80px;
+            }
+
+            config:hover{
+                cursor:pointer;
+            }
+
+            .button-style {
+            color: white !important;
+            background-color: #861616;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+
+        </style>
+
+         <%--BARRA DE NAVEGACIÓN--%>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark"; style="background-color: brown !important">
+
+            <%--AQUI ESTA EL CONTENIDO DE LA BARRA DE NAVEGACION--%>
+
+            <div class="container">
+                <img id="logoNavBar" src="Imagenes/MI TIENDITA LOGO.png"/>
+                <a class="navbar-brand" runat="server" href="~/AcercaDeNosotros">Mi tiendita</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" runat="server" id="btnInicio" href="~/Inicio" style="color:white!important">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" id="btnAcercaDe" href="~/AcercaDeNosotros" style="color:white!important">Acerca de nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" id="btnContactanos" href="~/Feedback" style="color:white!important">Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" id="btnProductos" href="~/Productos" style="color:white!important">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" id="btnHistorial" href="~/Historial" style="color:white!important">Historial</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" id="btnInforme" href="~/Informe" style="color:white!important">Informe</a></li>
+                        <li class="nav-item"><a class="nav-link button-style" runat="server" id="btnConfiguracion" href="~/Configuracion">Configuración</a></li>
+                    </ul>
+                     <table id="usuarioCaja" border="1" style="margin:auto;">
+                     <tr>
+                         <td>
+                             <asp:label id="label1" runat="server" Text="Usuario: " ForeColor="White"></asp:label>
+                         </td>
+                         <td>
+                             <asp:label id="lbUsuario" runat="server" Text=""></asp:label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td colspan ="2" style="text-align: center">
+                             <asp:Label ID="lbRol" runat="server" Text="Label" ForeColor="gold"></asp:Label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td id="btnCerrarSesion" colspan="2" style="text-align: center">
+                             <asp:LinkButton ID="lbtcerrar" runat="server" Text="Cerrar Sesión" class="rounded-button" OnClick="lbtcerrar_Click"></asp:LinkButton>
+                         </td>
+                     </tr>
+                 </table>
+                </div>
+            </div>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Mi tiendita - Todos los derechos reservados S.A de C.V</p>
+            </footer>
+        </div>
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
