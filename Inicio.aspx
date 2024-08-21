@@ -2,42 +2,41 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <head>
-    <title>Abarrotes mi Tiendita</title>
-    <link rel="stylesheet" href="Styles\Stylesinicio.css" />
-</head>
-<body class="inicio">
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo de Abarrotes mi Tiendita" />
-            <h1>Abarrotes mi Tiendita</h1>
-        </div>
-        <div class="user-info">
+        <title>Abarrotes mi Tiendita</title>
+        <link rel="stylesheet" href="Styles\Stylesinicio.css" />
+    </head>
+    <body class="inicio">
+        <header class ="encabezadoInicio">
+            <div class="logo">
+                <img src="Imagenes/MI TIENDITA LOGO.png" alt="Logo de Abarrotes mi Tiendita" />
+                <h1>Abarrotes mi tiendita</h1>
+            </div>
+            <div class="user-info">
 
-        <nav id="manualyAyuda">
-            <button class="nav-button">Manual</button>
-            <button class="nav-button">Ayuda</button> <img src="Imagenes\ayuda.png" />
-        </nav>
+            <nav id="manualyAyuda">
+                <asp:Button class="nav-button" ID="manualP" runat="server" Text="Manual" />
+                <asp:Button class="nav-button" ID="ayudaP" runat="server" Text="Ayuda" OnClick="ayudaP_Click" /> <img src="Imagenes\ayuda.png" />
+            </nav>
 
-       </div>
-    </header>
-    <main>
-        <div class="menu-option venta">
-            <img src="Imagenes\Venta.png" />
-            <span>Venta</span>
-        </div>
-        <div class="menu-option productos">
-            <img src="Imagenes\Productos.png" />
-            <span>Productos</span>
-            
-        </div>
-        <div class="menu-option informe">
-            <img src="Imagenes\Info.png" />
-            <span>Informe</span>
-        </div>
-        <div class="menu-option cuentas">
-            <img src="Imagenes\cuentas.png" />
-            <span>Cuentas</span>
-        </div>
-    </main>
-</body>
+           </div>
+        </header>
+        <main>
+
+            <asp:LinkButton ID="btnVenta" runat="server" CssClass="menu-option venta" OnClick="btnVenta_Click">
+                <img src="Imagenes/Venta.png" alt="Venta" />
+                <span>Venta</span>
+            </asp:LinkButton>
+
+            <asp:LinkButton ID="btnProductos" runat="server" CssClass="menu-option productos" OnClick="btnProductos_Click">
+                <img src="Imagenes/Productos.png" alt="Productos" />
+                <span>Productos</span>
+            </asp:LinkButton>
+
+            <asp:LinkButton ID="btnCuentas" runat="server" CssClass="menu-option cuentas" OnClick="btnCuentas_Click">
+                <img src="Imagenes/cuentas.png" alt="Cuentas" />
+                <span>Cuentas</span>
+            </asp:LinkButton>
+
+        </main>
+    </body>
 </asp:Content>

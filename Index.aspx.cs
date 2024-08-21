@@ -76,5 +76,7 @@ namespace Proyecto_Mi_tiendita
                 lbMensaje.Text = "Usuario Incorrecto";
             }
         }
+
+
     }
 }

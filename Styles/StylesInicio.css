@@ -15,6 +15,11 @@ header {
     border-radius: 10px;
 }
 
+.logo{
+    display:flex;
+    flex: auto;
+}
+
 .logo img {
     height: 50px;
     margin-right: 10px;
@@ -35,14 +40,6 @@ header {
         margin-right: 10px;
     }
 
-nav {
-    background-color: #b71c1c;
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-    border-radius: 10px;
-}
-
 .nav-button {
     background: none;
     border: none;
@@ -53,9 +50,11 @@ nav {
     padding: 5px;
 }
 
-.nav-button:hover {
+    .nav-button:hover {
         background-color: black;
-}
+        transition: background-color 1s ease;
+        border-radius: 10px;
+    }
 
 main {
     display: flex;
@@ -65,23 +64,37 @@ main {
 }
 
 .menu-option {
-    background-color: #d32f2f;
-    color: white;
-    width: 150px;
-    height: 150px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
+    background-color: #d32f2f; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    width: 150px; /* Ancho del botón */
+    height: 150px; /* Alto del botón */
+    margin: 0 10px; /* Márgenes laterales */
+    display: flex; /* Utiliza flexbox para centrar contenido */
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    border: none; /* Sin borde por defecto */
+    transition: background-color 0.3s ease; /* Transición suave en hover */
+    text-decoration: none; /* Quitar subrayado del texto */
 }
 
-.menu-option img {
-    height: 50px;
-    margin-bottom: 10px;
-}
+    .menu-option:hover {
+        background-color: #b71c1c; /* Cambia a un rojo más oscuro al pasar el cursor */
+    }
+
+    .menu-option img {
+        width: 60px; /* Tamaño de la imagen */
+        height: 60px;
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    }
+
+    .menu-option span {
+        font-size: 16px; /* Tamaño del texto */
+        font-weight: bold; /* Texto en negrita */
+    }
+
 
 .venta {
     background-color: #B22222;
@@ -97,4 +110,8 @@ main {
 
 .cuentas {
     background-color: #BD6C6C;
+}
+
+#manualyAyuda{
+    border-radius: 15px;
 }

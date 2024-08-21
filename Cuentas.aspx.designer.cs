@@ -11,7 +11,7 @@ namespace Proyecto_Mi_tiendita
 {
 
 
-    public partial class Productos
+    public partial class Cuentas
     {
 
         /// <summary>
@@ -33,40 +33,40 @@ namespace Proyecto_Mi_tiendita
         protected global::System.Web.UI.WebControls.TextBox ctNombre;
 
         /// <summary>
-        /// Control ctDescripcion.
+        /// Control ctEmail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctDescripcion;
+        protected global::System.Web.UI.WebControls.TextBox ctEmail;
 
         /// <summary>
-        /// Control ctStock.
+        /// Control ctPassword.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctStock;
+        protected global::System.Web.UI.WebControls.TextBox ctPassword;
 
         /// <summary>
-        /// Control ctPrecio.
+        /// Control ctRol.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctPrecio;
+        protected global::System.Web.UI.WebControls.TextBox ctRol;
 
         /// <summary>
-        /// Control ctFIngreso.
+        /// Control ctSucId.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctFIngreso;
+        protected global::System.Web.UI.WebControls.TextBox ctSucId;
 
         /// <summary>
         /// Control btnGuardar.
@@ -103,33 +103,6 @@ namespace Proyecto_Mi_tiendita
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbMensaje;
-
-        /// <summary>
-        /// Control searchBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText searchBox;
-
-        /// <summary>
-        /// Control btnBuscar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
-
-        /// <summary>
-        /// Control lbMensaje2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbMensaje2;
 
         /// <summary>
         /// Control grid.

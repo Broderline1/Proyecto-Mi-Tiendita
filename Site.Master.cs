@@ -22,23 +22,12 @@ namespace Proyecto_Mi_tiendita
                 {
                     lbRol.Text = "Usuario";
                     Control menu;
-                    menu = Page.Master.FindControl("btnProductos");
-                    menu.Visible = false;
 
-                    menu = Page.Master.FindControl("btnInicio");
-                    menu.Visible = false;
+                    menu = Page.Master.FindControl("Inicio.aspx");
+                    menu.Visible = true;
 
-                    menu = Page.Master.FindControl("btnHistorial");
+                    menu = Page.Master.FindControl("Historial.aspx");
                     menu.Visible = false;
-
-                    menu = Page.Master.FindControl("btnInforme");
-                    menu.Visible = false;
-
-                    menu = Page.Master.FindControl("btnConfiguracion");
-                    menu.Visible = false;
-
-                    /*menu = Page.Master.FindControl("");
-                    menu.Visible = false;*/
 
                 }
             }

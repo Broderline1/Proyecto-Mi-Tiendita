@@ -42,15 +42,6 @@ namespace Proyecto_Mi_tiendita
         protected global::System.Web.UI.HtmlControls.HtmlAnchor btnContactanos;
 
         /// <summary>
-        /// Control btnProductos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnProductos;
-
-        /// <summary>
         /// Control btnHistorial.
         /// </summary>
         /// <remarks>
@@ -60,31 +51,13 @@ namespace Proyecto_Mi_tiendita
         protected global::System.Web.UI.HtmlControls.HtmlAnchor btnHistorial;
 
         /// <summary>
-        /// Control btnInforme.
+        /// Control lbParaUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnInforme;
-
-        /// <summary>
-        /// Control btnConfiguracion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnConfiguracion;
-
-        /// <summary>
-        /// Control label1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.Label lbParaUsuario;
 
         /// <summary>
         /// Control lbUsuario.

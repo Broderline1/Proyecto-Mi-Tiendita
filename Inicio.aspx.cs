@@ -16,5 +16,25 @@ namespace Proyecto_Mi_tiendita
             if (usuario == null)
                 Response.Redirect("index.aspx");
         }
+
+        protected void btnVenta_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ventas.aspx");
+        }
+
+        protected void btnProductos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Productos.aspx");
+        }
+
+        protected void btnCuentas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Cuentas.aspx");
+        }
+
+        protected void ayudaP_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Feedback.aspx");
+        }
     }
 }
