@@ -52,7 +52,7 @@
                Precio:
            </td>
            <td colspan="2">
-               $<asp:TextBox ID="ctPrecio" runat="server" AutoPostBack="True" OnTextChanged="ctPrecio_TextChanged"></asp:TextBox>
+               <asp:TextBox ID="ctPrecio" runat="server" AutoPostBack="True" OnTextChanged="ctPrecio_TextChanged"></asp:TextBox>
            </td>
        </tr>
        <tr>

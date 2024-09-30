@@ -15,11 +15,17 @@ namespace Proyecto_Mi_tiendita
             Usuario usuario = (Usuario)Session["usuario"];
             if (usuario == null)
                 Response.Redirect("index.aspx");
+
+            if (usuario.Usu_Rol == 2)
+            {
+                btnHistorial.Visible = false;
+                btnCuentas.Visible = false;
+            }
         }
 
-        protected void btnVenta_Click(object sender, EventArgs e)
+        protected void btnHistorial_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Ventas.aspx");
+            Response.Redirect("Historial.aspx");
         }
 
         protected void btnProductos_Click(object sender, EventArgs e)

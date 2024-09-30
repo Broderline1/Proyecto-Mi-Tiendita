@@ -128,7 +128,6 @@
                         <li class="nav-item"><a class="nav-link" runat="server" id="btnInicio" href="~/Inicio" style="color:white!important">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" id="btnAcercaDe" href="~/AcercaDeNosotros" style="color:white!important">Acerca de nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" id="btnContactanos" href="~/Feedback" style="color:white!important">Feedback</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" id="btnHistorial" href="~/Historial" style="color:white!important">Historial</a></li>
                     </ul>
                     <div class="contenedor">
                         <table id="usuarioCaja"  style="margin:auto; border-radius: 25px;">

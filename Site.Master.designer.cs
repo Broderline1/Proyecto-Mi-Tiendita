@@ -42,15 +42,6 @@ namespace Proyecto_Mi_tiendita
         protected global::System.Web.UI.HtmlControls.HtmlAnchor btnContactanos;
 
         /// <summary>
-        /// Control btnHistorial.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnHistorial;
-
-        /// <summary>
         /// Control lbParaUsuario.
         /// </summary>
         /// <remarks>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Mi_tiendita.Clases;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI;
@@ -12,6 +13,10 @@ namespace Proyecto_Mi_tiendita
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Usuario usuario = (Usuario)Session["usuario"];
+            if (usuario == null)
+                Response.Redirect("index.aspx");
+
             if (!IsPostBack)
             {
                 llenarGrid();

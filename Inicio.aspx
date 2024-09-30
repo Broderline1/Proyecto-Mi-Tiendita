@@ -14,7 +14,6 @@
             <div class="user-info">
 
             <nav id="manualyAyuda">
-                <asp:Button class="nav-button" ID="manualP" runat="server" Text="Manual" />
                 <asp:Button class="nav-button" ID="ayudaP" runat="server" Text="Ayuda" OnClick="ayudaP_Click" /> <img src="Imagenes\ayuda.png" />
             </nav>
 
@@ -22,9 +21,9 @@
         </header>
         <main>
 
-            <asp:LinkButton ID="btnVenta" runat="server" CssClass="menu-option venta" OnClick="btnVenta_Click">
-                <img src="Imagenes/Venta.png" alt="Venta" />
-                <span>Venta</span>
+            <asp:LinkButton ID="btnHistorial" runat="server" CssClass="menu-option historial" OnClick="btnHistorial_Click">
+                <img src="Imagenes/Historial.png" alt="Historial" />
+                <span>Historial</span>
             </asp:LinkButton>
 
             <asp:LinkButton ID="btnProductos" runat="server" CssClass="menu-option productos" OnClick="btnProductos_Click">

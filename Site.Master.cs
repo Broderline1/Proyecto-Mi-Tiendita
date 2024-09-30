@@ -21,14 +21,6 @@ namespace Proyecto_Mi_tiendita
                 else
                 {
                     lbRol.Text = "Usuario";
-                    Control menu;
-
-                    menu = Page.Master.FindControl("Inicio.aspx");
-                    menu.Visible = true;
-
-                    menu = Page.Master.FindControl("Historial.aspx");
-                    menu.Visible = false;
-
                 }
             }
         }

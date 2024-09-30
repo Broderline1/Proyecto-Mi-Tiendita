@@ -15,15 +15,6 @@ namespace Proyecto_Mi_tiendita
     {
 
         /// <summary>
-        /// Control manualP.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button manualP;
-
-        /// <summary>
         /// Control ayudaP.
         /// </summary>
         /// <remarks>
@@ -33,13 +24,13 @@ namespace Proyecto_Mi_tiendita
         protected global::System.Web.UI.WebControls.Button ayudaP;
 
         /// <summary>
-        /// Control btnVenta.
+        /// Control btnHistorial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnVenta;
+        protected global::System.Web.UI.WebControls.LinkButton btnHistorial;
 
         /// <summary>
         /// Control btnProductos.

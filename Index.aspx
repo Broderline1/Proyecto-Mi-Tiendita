@@ -25,7 +25,7 @@
                 <div style="text-align:center;">
                     <asp:Label ID="lbMensaje" runat="server"></asp:Label>
                 </div>
-                <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" OnClientClick="mostrarPantallaCarga();" />
+                <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" />
                 <br />
                 <div id="contactoEmpresa">
                     <p id="contact">
